@@ -11,7 +11,7 @@ public class Car extends Vehicles {
     protected int maxGear = 6;
 
     //Constructor1 of Car
-    public Car(String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
+    public Car(float availableFuel, String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
         this.chassisNumber = chassisNumber;
         this.tireSize = tireSize;
         this.consumptionPer100Km = consumptionPer100Km;
