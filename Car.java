@@ -12,6 +12,7 @@ public class Car extends Vehicles {
 
     //Constructor1 of Car
     public Car(float availableFuel, String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
+        this.availableFuel = availableFuel;
         this.chassisNumber = chassisNumber;
         this.tireSize = tireSize;
         this.consumptionPer100Km = consumptionPer100Km;
