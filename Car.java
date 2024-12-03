@@ -1,7 +1,7 @@
 //Car is a vehicle
 public class Car extends Vehicles {
     //create the properties of car which cannot be modified using protected
-    protected float availableFuel;
+    protected float availableFuel = 60;
     protected int tireSize;
     protected String chassisNumber;
     protected String fuelType;
@@ -11,8 +11,7 @@ public class Car extends Vehicles {
     protected int maxGear = 6;
 
     //Constructor1 of Car
-    public Car(float availableFuel, String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
-        this.availableFuel = availableFuel;
+    public Car(String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
         this.chassisNumber = chassisNumber;
         this.tireSize = tireSize;
         this.consumptionPer100Km = consumptionPer100Km;
@@ -38,7 +37,8 @@ public class Car extends Vehicles {
     }
 
     public float getAverageFuelConsumption() {
-        return fuelTankSize;
+
+        return availableFuel;
     }
 
     @Override

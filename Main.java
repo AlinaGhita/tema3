@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Car car = new Logan(0, "23235657687"); // Logan can extend from Dacia, while Dacia extends from Car
-
+        Car car = new Logan(70, "23235657687"); // Logan can extend from Dacia, while Dacia extends from Car
         car.start();
 
         car.shiftGear(1);
