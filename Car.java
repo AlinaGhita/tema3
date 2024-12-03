@@ -1,5 +1,5 @@
 //Car is a vehicle
-public class Car extends Vehicles {
+abstract class  Car extends Vehicles {
     //create the properties of car which cannot be modified using protected
     protected float availableFuel;
     protected int tireSize;
