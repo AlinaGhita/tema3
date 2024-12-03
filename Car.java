@@ -9,6 +9,7 @@ public class Car extends Vehicles {
     protected int currentGear;
     protected float fuelTankSize;
     protected int maxGear = 6;
+    protected float fuelConsumed = 20;
 
     //Constructor1 of Car
     public Car(float availableFuel, String chassisNumber, int tireSize, float consumptionPer100Km,  String fuelType) {
@@ -38,8 +39,8 @@ public class Car extends Vehicles {
     }
 
     public float getAverageFuelConsumption() {
-
-        return availableFuel;
+        //if availableFuel is 0 or negative then 1 will be used for division
+        return fuelConsumed / (availableFuel > 0 ? availableFuel : 1) * 100;
     }
 
     @Override
